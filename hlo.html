@@ -1,0 +1,169 @@
+# hlo
+NEW WEBSITE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product & Registration Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    nav {
+      background-color: #0077cc;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #004aad;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      background-color: #f7f7f7;
+      text-align: center;
+    }
+
+    .product-card h3 {
+      margin: 10px 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #004aad;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #003080;
+    }
+
+    footer {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    My Product Store
+  </header>
+
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#register">Register</a>
+  </nav>
+
+  <div class="section" id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <h3>Product A</h3>
+        <p>High-quality product for everyday use.</p>
+        <p><strong>₹499</strong></p>
+      </div>
+      <div class="product-card">
+        <h3>Product B</h3>
+        <p>Durable and affordable. Perfect for all ages.</p>
+        <p><strong>₹799</strong></p>
+      </div>
+      <div class="product-card">
+        <h3>Product C</h3>
+        <p>Best-selling item of the year. Limited stock!</p>
+        <p><strong>₹999</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="register">
+    <h2>User Registration</h2>
+    <form>
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <select name="product">
+        <option value="">Select Product</option>
+        <option value="product-a">Product A</option>
+        <option value="product-b">Product B</option>
+        <option value="product-c">Product C</option>
+      </select>
+      <textarea name="address" rows="3" placeholder="Delivery Address" required></textarea>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <footer>
+    © 2025 My Product Store. All rights reserved.
+  </footer>
+
+</body>
+</html>
